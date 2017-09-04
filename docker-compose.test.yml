@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  api:
+    entrypoint: /home/docker/startup.integration.sh
+  user:
+    entrypoint: /home/docker/startup.integration.sh
+  notification:
+    entrypoint: /home/docker/startup.integration.sh

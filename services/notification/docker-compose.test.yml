@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  notification:
+    environment:
+      NODE_ENV: test
+    entrypoint: /home/docker/startup.test.sh
+    volumes:
+      - ./services/notification/src/unit_coverage:/var/lib/app/unit_coverage
+      - ./services/notification/src/functional_coverage:/var/lib/app/functional_coverage

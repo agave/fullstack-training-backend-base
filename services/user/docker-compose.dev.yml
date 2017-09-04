@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  db:
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data/pgdata
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+  user:
+    environment:
+      NODE_ENV: development
+    entrypoint: /home/docker/startup.dev.sh

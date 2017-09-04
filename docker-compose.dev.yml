@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  api:
+    volumes:
+      - ./services/api/src:/var/lib/app
+      - ./services/api/scripts:/home/docker
+      - ./services/core:/var/lib/core
+      # prevent mounting node_modules to avoid cross-platform incompatibilities
+      - /var/lib/app/node_modules
+    entrypoint: /home/docker/startup.integration.sh
+  user:
+    volumes:
+      - ./services/user/src:/var/lib/app
+      - ./services/user/scripts:/home/docker
+      - ./services/core:/var/lib/core
+      # prevent mounting node_modules to avoid cross-platform incompatibilities
+      - /var/lib/app/node_modules
+    entrypoint: /home/docker/startup.integration.sh
+  notification:
+    volumes:
+      - ./services/notification/src:/var/lib/app
+      - ./services/notification/scripts:/home/docker
+      - ./services/core:/var/lib/core
+      # prevent mounting node_modules to avoid cross-platform incompatibilities
+      - /var/lib/app/node_modules
+    entrypoint: /home/docker/startup.integration.sh

@@ -1,0 +1,68 @@
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .mail-container {
+    background-color: #fff;
+  }
+
+  .mail-content {
+    max-width: 490px;
+    margin: auto;
+    padding: 30px 0;
+    font-family: OpenSans, Calibri, Verdana;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+  }
+
+  .content-body {
+    background-color: #fff;
+    padding: 44px;
+    border-left: solid 1px #ececee;
+    border-right: solid 1px #ececee;
+    border-bottom: solid 1px #ececee;
+  }
+
+  .header {
+    background-color: #414c7f;
+    text-align: center;
+    border-bottom: 5px solid #5a52ff;
+    color: #fff;
+    line-height: 0;
+  }
+
+  .footer {
+    background-color: #f9f9fb;
+    padding: 25px 44px;
+    color: #888;
+    text-align: center;
+    border-left: solid 1px #ececee;
+    border-right: solid 1px #ececee;
+    border-bottom: solid 1px #ececee;
+  }
+
+  .footer a {
+    color: #5a52ff;
+  }
+
+  .btn {
+    display: block;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-color: #5a52ff;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 30px;
+    text-decoration: none;
+  }
+
+  a {
+    color: #5a52ff;
+    text-decoration: none;
+  }
+</style>

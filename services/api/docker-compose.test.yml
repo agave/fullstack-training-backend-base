@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  api:
+    environment:
+      NODE_ENV: test
+    entrypoint: /home/docker/startup.test.sh
+    volumes:
+      - ./services/api/src/unit_coverage:/var/lib/app/unit_coverage
+      - ./services/api/src/functional_coverage:/var/lib/app/functional_coverage

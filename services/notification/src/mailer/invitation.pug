@@ -1,0 +1,9 @@
+extends ./layout/email
+
+block emailContent
+  include ./mixins/link
+
+  p <b>#{username}</b>:
+  p Welcome
+
+  +link(`${webBaseUrl}/`, 'App')

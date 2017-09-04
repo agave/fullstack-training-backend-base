@@ -1,0 +1,101 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:9
+    ports:
+      - "5430:5432" # in order to avoid conflicts with running instances of pg
+    volumes:
+      - ./scripts/postgres:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    labels:
+      container_group: service
+    expose:
+      - "5430"
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+    labels:
+      container_group: service
+  kafka:
+    image: wurstmeister/kafka
+    links:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_ADVERTISED_PORT: 9092
+      KAFKA_CREATE_TOPICS: "user:1:1"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    labels:
+      container_group: service
+  api:
+    build:
+      context: ./services
+      dockerfile: ./api/Dockerfile
+    image: backend/api
+    links:
+      - user
+      - kafka
+    environment:
+      TORUS_ENV: "${TORUS_ENV}"
+      TORUS_SERVICE: "${TORUS_SERVICE}"
+    ports:
+      - "3000:3000"
+    labels:
+      container_group: service
+    environment:
+      KAFKA_HOST: kafka
+      KAFKA_PORT: 9092
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      S3_BUCKET: "${S3_BUCKET}"
+      S3_REGION: "${S3_REGION}"
+      GRPC_TIMEOUT: "${GRPC_TIMEOUT}"
+  user:
+    build:
+      context: ./services
+      dockerfile: ./user/Dockerfile
+    image: backend/user
+    links:
+      - db
+      - kafka
+      - notification
+    environment:
+      PORT: 80
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      DB_NAME: user
+      DB_HOST: db
+      KAFKA_HOST: kafka
+      KAFKA_PORT: 9092
+      TORUS_ENV: "${TORUS_ENV}"
+      TORUS_SERVICE: "${TORUS_SERVICE}"
+    labels:
+      container_group: service
+  notification:
+    build:
+      context: ./services
+      dockerfile: ./notification/Dockerfile
+    image: backend/notification
+    links:
+      - kafka
+    environment:
+      KAFKA_HOST: kafka
+      KAFKA_PORT: 9092
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      SES_REGION: "${SES_REGION}"
+      SES_SENDER: "${SES_SENDER}"
+      API_BASE_URL: "${API_BASE_URL}"
+      WEB_BASE_URL: "${WEB_BASE_URL}"
+      TORUS_ENV: "${TORUS_ENV}"
+      TORUS_SERVICE: "${TORUS_SERVICE}"
+    labels:
+      container_group: service
