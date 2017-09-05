@@ -1,0 +1,30 @@
+Error:
+  type: object
+  required:
+    - path
+    - message
+    - code
+  properties:
+    path:
+      type: string
+    message:
+      type: string
+    data:
+      type: object
+    code:
+      type: integer
+      minimum: 0
+Success:
+  type: object
+  required:
+    - success
+  properties:
+    success:
+      type: boolean
+Exists:
+  type: object
+  required:
+    - exists
+  properties:
+    exists:
+      type: boolean

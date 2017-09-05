@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" version="3.2" folio="606" fecha="2016-12-21T14:00:02" sello="Xlj6GS/34PZRg3BfPJ5SggVLN69eabdUOIQVV0mNPRaO+WUw9eht65fW7eZmO83UaKlalWv5XPF1qwuXIe26lkplVr4H4WkB9GtWeQYX3eXgb3r3/EktlTKAx+Qn+7Ux4GPJVUs79vAJ1Fu/8mfhBtr3jUUYB2lgAnSQd/vVq0E=" formaDePago="Pago en una sola exhibición" noCertificado="00001000000301012249" certificado="MIIEszCCA5ugAwIBAgIUMDAwMDEwMDAwMDAzMDEwMTIyNDkwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xMzEwMDkxMzM5MDJaFw0xNzEwMDkxMzM5MDJaMIH/MSwwKgYDVQQDEyNJTkRVU1RSSUFMIERFIENBTFpBRE8gSU5ETyBTQSBERSBDVjEsMCoGA1UEKRMjSU5EVVNUUklBTCBERSBDQUxaQURPIElORE8gU0EgREUgQ1YxLDAqBgNVBAoTI0lORFVTVFJJQUwgREUgQ0FMWkFETyBJTkRPIFNBIERFIENWMSUwIwYDVQQtExxJQ0kwOTA2MDIxWDMgLyBWQVBBNzkwNDI1QzY3MR4wHAYDVQQFExUgLyBWQVBBNzkwNDI1SEpDWlRMMDAxLDAqBgNVBAsTI0lORFVTVFJJQUwgREUgQ0FMWkFETyBJTkRPIFNBIERFIENWMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOJPuli/VwTzsCGX5kn8uz4EPQazNW63ro8UVzyH5T1qjHUCi7YESfbQY1QcI+GKsNxMiRJTMysBPPm0GvRRe23s2FC0XJLwzc8Qx5nVlRvcuijxvFcFNDSjNReOp/h6XP7HiLUKh4Q+AydLwBaZgPKhg3QIMgbKSwvqLUjPD3gQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEAYwFJpSWNm2PpH/PmjTLG4QCWgEMKflhbNOrsfC3lHOxFGRPIhMRETqhHSYf25aByuA/iVqlCywSv4Cc3rqs/SVZuVYu1dCpxjqFVvcQRVC64tyRfGguo1KNudUQjIVUttR/KT1qECDm+z1UVm726/jBxrHiTPE/esHHypl/+6+pk0d+n8Sv5lyTrawoJmvo1qeZUx0riYmhF+E03nxZefDRbCSGss0P1sVeUuCU+ClXnV1nYk/r0OvL1Ss5mlCHRFphFcSrTyDTq/xhCNjk/jVh7XsuBH6s6lNi0eGKM3vNpuIbrLyUrT+HNQgCpUk7Mi3DlZFhyk8RnV2CQdVi40Q==" condicionesDePago="CREDITO" subTotal="27835.00" TipoCambio="1.00" Moneda="MXN" total="32288.60" metodoDePago="03" tipoDeComprobante="ingreso" LugarExpedicion="GUADALAJARA, Jalisco">
+  <cfdi:Emisor rfc="ICI0906021X3" nombre="INDUSTRIAL DE CALZADO INDO‚ S.A. DE C.V.">
+    <cfdi:DomicilioFiscal calle="EMILIO RABAZA" noExterior="1396" colonia="EL MIRADOR" localidad="GUADALAJARA" municipio="GUADALAJARA" estado="Jalisco" pais="México" codigoPostal="44370" />
+    <cfdi:RegimenFiscal Regimen="Régimen General de Ley Personas Morales" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="FAS1208103V9" nombre="FASHIONKING, S.A. DE C.V.">
+    <cfdi:Domicilio calle="EMILIO RABASA" noExterior="1396" colonia="EL MIRADOR" municipio="GUADALAJARA" estado="JALISCO" pais="México" codigoPostal="44370" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="755.00" unidad="PARES" noIdentificacion="SUELA" descripcion="TOMILLO II COLOR AMBAR O.C. 13845" valorUnitario="17.00" importe="12835.00" />
+    <cfdi:Concepto cantidad="600.00" unidad="PARES" noIdentificacion="SUELA" descripcion="ARROZ MIX 60 O.C. 13929 O.C. 13929" valorUnitario="25.00" importe="15000.00" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="4453.60">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="4453.60" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" version="1.0" UUID="B14E4CC3-DA4A-4597-8235-51165D835FA3" FechaTimbrado="2016-12-21T14:00:02" selloCFD="Xlj6GS/34PZRg3BfPJ5SggVLN69eabdUOIQVV0mNPRaO+WUw9eht65fW7eZmO83UaKlalWv5XPF1qwuXIe26lkplVr4H4WkB9GtWeQYX3eXgb3r3/EktlTKAx+Qn+7Ux4GPJVUs79vAJ1Fu/8mfhBtr3jUUYB2lgAnSQd/vVq0E=" noCertificadoSAT="00001000000203352843" selloSAT="SlAgmWk8u+TlVC7n854WYLKeBrAseXNfzfX1UZvNzoIXdv0oKJIVnpUcBmkYYh3DpeVuTlbTE0OEecQEBUMHVVOszRHOb1K1erNYD+vdBVsYy6f/OoKPsfhI1W0A/caZw33eZ2fyhm+dFL0gYV4BlyiTk6reS3lx/Y3gRxxwDgQ=" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>
+

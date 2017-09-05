@@ -1,0 +1,7 @@
+# Common model schemas
+Error:
+  $ref: ./models/common.yaml#/Error
+Success:
+  $ref: ./models/common.yaml#/Success
+Exists:
+  $ref: ./models/common.yaml#/Exists

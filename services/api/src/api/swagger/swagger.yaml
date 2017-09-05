@@ -1,0 +1,28 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: API
+  description: API
+host: localhost:3000
+basePath: /api/v1
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+
+# TODO: Split paths into multiple files once this issue has been resolved https://github.com/apigee-127/sway/issues/92
+paths:
+
+securityDefinitions:
+  User:
+    type: apiKey
+    name: Authorization
+    in: header
+
+definitions:
+  $ref: ./definitions/index.yaml
+
+parameters:
+  $ref: ./parameters/index.yaml

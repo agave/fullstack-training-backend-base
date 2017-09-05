@@ -1,0 +1,8 @@
+# Query
+
+QueryToken:
+  name: token
+  in: query
+  description: Validate token
+  required: true
+  type: string

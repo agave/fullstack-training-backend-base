@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cfdi:Comprobante LugarExpedicion="Tlaquepaque Jalisco" metodoDePago="03" tipoDeComprobante="ingreso" total="232.00" descuento="0.00" subTotal="200.00" certificado="MIIEkTCCA3mgAwIBAgIUMDAwMDEwMDAwMDAzMDY1MjM3MDgwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xNTAzMjQxOTQwNTlaFw0xOTAzMjQxOTQwNTlaMIHdMSgwJgYDVQQDEx9KT05BVEhBTiBKRVNVUyBHT05aQUxFWiBIRVJSRVJBMSgwJgYDVQQpEx9KT05BVEhBTiBKRVNVUyBHT05aQUxFWiBIRVJSRVJBMSgwJgYDVQQKEx9KT05BVEhBTiBKRVNVUyBHT05aQUxFWiBIRVJSRVJBMRYwFAYDVQQtEw1HT0hKODEwNTI2R1M5MRswGQYDVQQFExJHT0hKODEwNTI2SEpDTlJOMDkxKDAmBgNVBAsTH0pvbmF0aGFuIEplc3VzIEdvbnphbGV6IEhlcnJlcmEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALJLd7zEyTyHWDUKbYW0Zv8udTrEAgY4bQxI5U8kEP5MqLXVe5cxRO8ry49zWO9zt45U6Xg4cdl6oLFzaskv4jc3HhKOjChLvDF9MiT4Qi3tgcIkc9bjxV+r0Gtvntbi135w5ffv9PGx3M9p9bmHHSqljDcclywIWfXxSIcKcZuhAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBBQUAA4IBAQAx+9N7zRXkpt7c8FR02JmYyYe4ZE7XwV+/m20TRIm36sH2VWJsI9CUS/SY/0u2I0oqS7xS9WlL7TG7WX+vYEd8lVN1As6zTk+Bd6omfaaCbUp5p53Yrvl6OZM5zpsOYsNyO4E1VPYprj79fQzCZFMFvL1Hx+XfJwJ8eHOnmcRRNtHxG/pwOFK3o2x1E3Q0Wv3eSFlHkKAdT8ifD4AH+Ry/io6he/A+FPyCdWLKsUrZw4rMmmHGt/l7/O9Zel++pBOYzpp+BM4jYzxs5/r0Dknwxuc6B5xrM1QGsOaYF0N9Tk8bzyNyIiE/jYISQ6bfmlDglc7/3duUIseoYdNT8yBW" noCertificado="00001000000306523708" formaDePago="PAGO EN UNA SOLA EXHIBICIÓN" sello="UwXRIc/Nm5F8oY1ANjY7MJTME7lxfumD2UuvWy+1oCd/bfD2dVygM8yjD7scOj19WppBO3xo79fcYCmNJwisLLSL0P/vOJi+IFbPe2+cz+RmNB8IO0xs0ys6E71KsYOCibVN7xDwgQ7PavuDBdZ6NVmqx/Q9cTV9jubD+Jr+yYc=" fecha="2016-12-12T12:13:42" folio="72" serie="A" version="3.2" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor nombre="Jonathan Jesus Gonzalez Herrera" rfc="GOHJ810526GS9">
+    <cfdi:DomicilioFiscal codigoPostal="45608" pais="México" estado="Jalisco" municipio="Tlaquepaque" localidad="Tlaquepaque" colonia="Mirador del Tesoro" noInterior="81" noExterior="2130" calle="Avenida del Tesoro"/>
+    <cfdi:ExpedidoEn codigoPostal="45608" pais="México" estado="Jalisco" municipio="Tlaquepaque" localidad="Tlaquepaque" colonia="Mirador del Tesoro" noInterior="81" noExterior="2130" calle="Avenida del Tesoro"/>
+    <cfdi:RegimenFiscal Regimen="Régimen de incorporación"/>
+  </cfdi:Emisor>
+  <cfdi:Receptor nombre="Mauricio Jesus Martinez Portillo" rfc="MAPM870131BQ3">
+    <cfdi:Domicilio codigoPostal="45089" pais="México" estado="Jalisco" municipio="Zapopan" localidad="Zapopan" colonia="Fraccionamiento Residencial Victoria" noInterior="3" noExterior="1610" calle="AV. OBSIDIANA"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto importe="200.00" valorUnitario="200.00" descripcion="Mantenimiento y actualización de sitio web" noIdentificacion="AM-03" unidad="N/A" cantidad="1.00"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="32.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado importe="32.00" tasa="16.0000" impuesto="IVA"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital FechaTimbrado="2016-12-12T12:13:43" UUID="67c3495f-98fc-4818-91dd-261fb199e60e" noCertificadoSAT="00001000000203430011" selloCFD="UwXRIc/Nm5F8oY1ANjY7MJTME7lxfumD2UuvWy+1oCd/bfD2dVygM8yjD7scOj19WppBO3xo79fcYCmNJwisLLSL0P/vOJi+IFbPe2+cz+RmNB8IO0xs0ys6E71KsYOCibVN7xDwgQ7PavuDBdZ6NVmqx/Q9cTV9jubD+Jr+yYc=" selloSAT="UYPYRLjEAhbJJKdK/CuirBSA+69KzYPvCHYyec6fPyCxF2kFluhela1inmEraX9Q4We/TTVGmNmfqiaENL/ayIDLnM+iUcAuWDIN/SIGzwcbhCfI1718R+5F1R8wSGV6lUB36byrWJik288XjMHyFrICFsLlgP5h5yhmg7WukP8=" version="1.0" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

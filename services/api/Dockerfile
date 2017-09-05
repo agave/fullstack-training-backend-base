@@ -1,4 +1,4 @@
-FROM agavelab/nodejs:latest
+FROM agavelab/nodejs:8.4.0
 
 COPY ./api/src /var/lib/app
 COPY ./core /var/lib/core
