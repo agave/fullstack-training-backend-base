@@ -14,15 +14,41 @@ produces:
 
 # TODO: Split paths into multiple files once this issue has been resolved https://github.com/apigee-127/sway/issues/92
 paths:
+  x-swagger-router-controller: LoginController
+  /login:
+    post:
+      summary: "Login to App"
+      description: "login task"
+      operationId: login
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "login"
+          required: true
+          schema:
+            $ref: "#/definitions/Login"
+      responses:
+        200:
+          description: "200"
+        400:
+          description: "Invalid Data"
 
-securityDefinitions:
-  User:
-    type: apiKey
-    name: Authorization
-    in: header
+#securityDefinitions:
+#  User:
+#    type: apiKey
+#    name: Authorization
+#    in: header
 
+#definitions:
+#$ref: ./definitions/index.yaml
 definitions:
-  $ref: ./definitions/index.yaml
+  Login:
+    type: "object"
+    properties:
+      username:
+        type: "string"
+      password:
+        type: "string"
 
-parameters:
-  $ref: ./parameters/index.yaml
+#parameters:
+#$ref: ./parameters/index.yaml

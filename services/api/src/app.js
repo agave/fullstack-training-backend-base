@@ -46,6 +46,7 @@ app.use('/public', express.static('public'));
 function initScheduler() {
   return scheduler.init()
   .then(() => log.message('Scheduled jobs loaded', {}, 'App'));
+	
 }
 
 /* istanbul ignore next */

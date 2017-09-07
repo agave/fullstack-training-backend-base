@@ -6,3 +6,11 @@ QueryToken:
   description: Validate token
   required: true
   type: string
+
+LoginRequest:
+  type: object
+  properties:
+    useremail:
+      type: string
+    password:
+      type: string
