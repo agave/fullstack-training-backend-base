@@ -1,0 +1,17 @@
+syntax = "proto3";
+package session;
+
+service Session {
+  rpc login(Credentials) returns (FullToken) {}
+}
+
+message Credentials {
+  string guid = 1;
+  string email = 2;
+  string password = 3;
+}
+
+message FullToken {
+  string token = 1;
+  string email = 2;
+}
