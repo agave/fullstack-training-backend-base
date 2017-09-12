@@ -5,7 +5,9 @@ const port = process.env.PORT || 50051;
 const log = new (require('/var/lib/core/js/log'))(module);
 const scheduler = require('./vendor/scheduler');
 const kafkaProducer = require('./vendor/kafka-producer');
-const protos = [ ];
+const protos = [
+  'Session'
+];
 const protosAndControllers = [];
 
 protos.forEach(proto => {

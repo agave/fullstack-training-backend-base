@@ -1,5 +1,13 @@
 # Query
 
+DataTypeSession:
+  name: data_type
+  in: query
+  description: Request data type
+  required: false
+  type: string
+  enum: ['Session']
+  default: Session
 QueryToken:
   name: token
   in: query

@@ -14,6 +14,24 @@ produces:
 
 # TODO: Split paths into multiple files once this issue has been resolved https://github.com/apigee-127/sway/issues/92
 paths:
+  /login:
+    x-swagger-router-controller: SessionsController
+    post:
+      operationId: login
+      description: Login with user credentials
+      parameters:
+        - $ref: "#/parameters/DataTypeSession"
+        - name: credentials
+          in: body
+          description: User credentials
+          required: true
+          schema:
+            $ref: '#/definitions/LoginRequest'
+      responses:
+        200:
+          description: Login response
+          schema:
+            $ref: '#/definitions/LoginResponse'
 
 securityDefinitions:
   User:

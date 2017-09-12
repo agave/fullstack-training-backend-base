@@ -5,3 +5,11 @@ Success:
   $ref: ./models/common.yaml#/Success
 Exists:
   $ref: ./models/common.yaml#/Exists
+
+#Session request 
+LoginRequest:
+  $ref: ./api/session.yaml#/LoginRequest
+
+#Session response
+LoginResponse:
+  $ref: ./api/session.yaml#/LoginResponse
