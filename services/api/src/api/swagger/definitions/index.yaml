@@ -6,10 +6,14 @@ Success:
 Exists:
   $ref: ./models/common.yaml#/Exists
 
-#Session request 
+#Session request
 LoginRequest:
   $ref: ./api/session.yaml#/LoginRequest
 
 #Session response
 LoginResponse:
   $ref: ./api/session.yaml#/LoginResponse
+
+# Transactions
+TransactionsListResponse:
+  $ref: ./api/transactions.yaml#/TransactionsListResponse

@@ -1,0 +1,44 @@
+TransactionsListResponse:
+  type: object
+  properties:
+    type:
+      type: string
+      enum: ['Transactions']
+      default: Transactions
+    data:
+      type: object
+      required:
+        - items
+      properties:
+        items:
+          type: array
+          minItems: 10
+          items:
+            type: object
+            required:
+              - noid
+              - date
+              - type
+              - reference
+              - description
+              - amount
+            properties:
+              noid:
+                type: number
+                minimum: 1
+              date:
+                type: string
+              type:
+                type: string
+              reference:
+                type: integer
+                minimum: 0
+                maximum: 100
+              description:
+                type: string
+              amount:
+                type: number
+                minimum: 0
+                maximum: 10000
+    error:
+      $ref: '#/definitions/Error'
