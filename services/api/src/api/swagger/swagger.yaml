@@ -32,6 +32,15 @@ paths:
           description: Login response
           schema:
             $ref: '#/definitions/LoginResponse'
+  /transactions:
+    x-swagger-router-controller: TransactionsController
+    get:
+      operationId: getTransactions
+      responses:
+        200:
+          description: Transaction list
+          schema:
+            $ref: '#/definitions/TransactionsListResponse'
 
 securityDefinitions:
   User:
