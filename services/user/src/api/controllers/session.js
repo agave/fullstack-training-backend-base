@@ -1,20 +1,24 @@
 const errorHandler = require('../helpers/error');
 const { User } = require('../../models');
+const { userProducer } = require('../producers');
 
 class SessionController {
   login({ request }, callback) {
 
     const { email, password, guid } = request;
-    const query = {
-      where: {
-        email,
-        password
-      }
-    };
-    let token = '';
+    const response = { };
 
 
-    return User.findOne(query).then(user => {
+    return userProducer.ensureConnection().then(() => {
+      const query = {
+        where: {
+          email,
+          password
+        }
+      };
+
+      return User.findOne(query);
+    }).then(user => {
 
       if (!user) {
         const error = {
@@ -27,12 +31,11 @@ class SessionController {
         return Promise.reject(error);
       }
 
-      token = '1234asdf';
+      response.token = '1234asdf';
+      response.email = email;
 
-      const response = {
-        token,
-        email
-      };
+      return userProducer.loginEvent(response, guid);
+    }).then(() => {
 
       return callback(null, response);
     }).catch(err => errorHandler.format(err, guid, callback));
